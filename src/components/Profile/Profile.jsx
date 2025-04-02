@@ -1,6 +1,7 @@
-import s from "./Profile.module.css";
+// import styles from "./Profile.module.css";
+import st from "./Profile.module.css";
 
-function Profile({
+export default function Profile({
   name,
   tag,
   location,
@@ -8,29 +9,28 @@ function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+    <div className={st.wrapper}>
+      <div className={st.card}>
+        <img className={st.img} src={image} alt="User avatar" />
+        <p className={st.name}>{name}</p>
+        <p className={st.tag}>@{tag}</p>
+        <p className={st.address}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
+      <ul className={st.list}>
+        <li className={st.item}>
+          <span className={st.text}>Followers</span>
+          <span className={st.num}>{followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
+        <li className={st.item}>
+          <span className={st.text}>Views</span>
+          <span className={st.num}>{views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
+        <li className={st.item}>
+          <span className={st.text}>Likes</span>
+          <span className={st.num}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 }
-export default Profile;

@@ -1,6 +1,6 @@
 import "./App.css";
-import userData from "./userData.json";
-import Profile from "./components/Profile/Profile.jsx";
+import userData from "../../data/userData.json";
+import Profile from "../Profile/Profile.jsx";
 
 const App = () => {
   return (
