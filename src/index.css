@@ -1,3 +1,4 @@
+@import "./components/App.css";
 h1,
 h2,
 h3,
@@ -56,10 +57,15 @@ video {
   list-style: none;
 }
 body {
-  background-color: rgb(35, 35, 35);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/background4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .urban {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
 }

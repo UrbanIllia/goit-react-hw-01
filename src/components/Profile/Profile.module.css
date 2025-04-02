@@ -7,6 +7,8 @@
   width: 450px;
   margin: 0 auto;
   overflow: hidden;
+  box-shadow: 2px 3px 14px 2px rgba(255, 255, 255, 0.41);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .card {
   padding: 15px;
@@ -40,7 +42,7 @@
   border-top: 2px solid gray;
 }
 .item {
-  background-color: rgb(76, 76, 76);
+  background-color: rgb(68, 68, 68);
   width: calc((100%) / 3);
 
   padding: 20px;
@@ -51,11 +53,13 @@
   border-right: 2px solid gray;
 }
 .text {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8px;
   font-weight: 200;
+  font-size: 18px;
 }
 .num {
-  color: #fff;
+  color: #ffffff;
   font-weight: 900;
+  font-size: 24px;
 }
